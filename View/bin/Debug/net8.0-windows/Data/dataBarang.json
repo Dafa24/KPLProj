@@ -1,0 +1,26 @@
+[
+  {
+    "NamaBarang": "Hape",
+    "KodeBarang": 11,
+    "JumlahBarang": 1,
+    "HargaBarang": 23
+  },
+  {
+    "NamaBarang": "kondom",
+    "KodeBarang": 123,
+    "JumlahBarang": 290,
+    "HargaBarang": 123456
+  },
+  {
+    "NamaBarang": "singleton",
+    "KodeBarang": 345,
+    "JumlahBarang": 12,
+    "HargaBarang": 900000
+  },
+  {
+    "NamaBarang": "jajaja",
+    "KodeBarang": 2334,
+    "JumlahBarang": 12,
+    "HargaBarang": 123124521
+  }
+]

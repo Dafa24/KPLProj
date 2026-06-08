@@ -1,0 +1,20 @@
+[
+  {
+    "Username": "irji1",
+    "Nama": "irji",
+    "Password": "123456",
+    "Role": "User"
+  },
+  {
+    "Username": "dafa",
+    "Nama": "dafaGanteng",
+    "Password": "Admin",
+    "Role": "Admin"
+  },
+  {
+    "Username": "dafaganteng",
+    "Nama": "dafa",
+    "Password": "12345678",
+    "Role": "User"
+  }
+]

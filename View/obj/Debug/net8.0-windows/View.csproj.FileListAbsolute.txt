@@ -1,0 +1,91 @@
+X:\Tubes KPL GUI\GUI-KPL\View\bin\Debug\net8.0-windows\Main.deps.json
+X:\Tubes KPL GUI\GUI-KPL\View\bin\Debug\net8.0-windows\Main.runtimeconfig.json
+X:\Tubes KPL GUI\GUI-KPL\View\bin\Debug\net8.0-windows\Main.exe
+X:\Tubes KPL GUI\GUI-KPL\View\bin\Debug\net8.0-windows\View.exe
+X:\Tubes KPL GUI\GUI-KPL\View\bin\Debug\net8.0-windows\View.deps.json
+X:\Tubes KPL GUI\GUI-KPL\View\bin\Debug\net8.0-windows\View.runtimeconfig.json
+X:\Tubes KPL GUI\GUI-KPL\View\bin\Debug\net8.0-windows\View.dll
+X:\Tubes KPL GUI\GUI-KPL\View\bin\Debug\net8.0-windows\View.pdb
+X:\Tubes KPL GUI\GUI-KPL\View\bin\Debug\net8.0-windows\Main.dll
+X:\Tubes KPL GUI\GUI-KPL\View\bin\Debug\net8.0-windows\Main.pdb
+X:\Tubes KPL GUI\GUI-KPL\View\obj\Debug\net8.0-windows\View.csproj.AssemblyReference.cache
+X:\Tubes KPL GUI\GUI-KPL\View\obj\Debug\net8.0-windows\View.CreateBarang.resources
+X:\Tubes KPL GUI\GUI-KPL\View\obj\Debug\net8.0-windows\View.DeleteBarang.resources
+X:\Tubes KPL GUI\GUI-KPL\View\obj\Debug\net8.0-windows\View.EditBarang.resources
+X:\Tubes KPL GUI\GUI-KPL\View\obj\Debug\net8.0-windows\View.Homepage.resources
+X:\Tubes KPL GUI\GUI-KPL\View\obj\Debug\net8.0-windows\View.csproj.GenerateResource.cache
+X:\Tubes KPL GUI\GUI-KPL\View\obj\Debug\net8.0-windows\View.GeneratedMSBuildEditorConfig.editorconfig
+X:\Tubes KPL GUI\GUI-KPL\View\obj\Debug\net8.0-windows\View.AssemblyInfoInputs.cache
+X:\Tubes KPL GUI\GUI-KPL\View\obj\Debug\net8.0-windows\View.AssemblyInfo.cs
+X:\Tubes KPL GUI\GUI-KPL\View\obj\Debug\net8.0-windows\View.csproj.CoreCompileInputs.cache
+X:\Tubes KPL GUI\GUI-KPL\View\obj\Debug\net8.0-windows\View.sourcelink.json
+X:\Tubes KPL GUI\GUI-KPL\View\obj\Debug\net8.0-windows\View.csproj.Up2Date
+X:\Tubes KPL GUI\GUI-KPL\View\obj\Debug\net8.0-windows\View.dll
+X:\Tubes KPL GUI\GUI-KPL\View\obj\Debug\net8.0-windows\refint\View.dll
+X:\Tubes KPL GUI\GUI-KPL\View\obj\Debug\net8.0-windows\View.pdb
+X:\Tubes KPL GUI\GUI-KPL\View\obj\Debug\net8.0-windows\View.genruntimeconfig.cache
+X:\Tubes KPL GUI\GUI-KPL\View\obj\Debug\net8.0-windows\ref\View.dll
+X:\Tubes KPL GUI\GUI-KPL\View\obj\Debug\net8.0-windows\View.CariBarang.resources
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\bin\Debug\net8.0-windows\Main.deps.json
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\bin\Debug\net8.0-windows\Main.runtimeconfig.json
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\bin\Debug\net8.0-windows\Main.exe
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\bin\Debug\net8.0-windows\View.exe
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\bin\Debug\net8.0-windows\View.deps.json
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\bin\Debug\net8.0-windows\View.runtimeconfig.json
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\bin\Debug\net8.0-windows\View.dll
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\bin\Debug\net8.0-windows\View.pdb
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\bin\Debug\net8.0-windows\Main.dll
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\bin\Debug\net8.0-windows\Main.pdb
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\obj\Debug\net8.0-windows\View.csproj.AssemblyReference.cache
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\obj\Debug\net8.0-windows\View.CariBarang.resources
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\obj\Debug\net8.0-windows\View.CreateBarang.resources
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\obj\Debug\net8.0-windows\View.DeleteBarang.resources
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\obj\Debug\net8.0-windows\View.EditBarang.resources
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\obj\Debug\net8.0-windows\View.Homepage.resources
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\obj\Debug\net8.0-windows\View.csproj.GenerateResource.cache
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\obj\Debug\net8.0-windows\View.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\obj\Debug\net8.0-windows\View.AssemblyInfoInputs.cache
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\obj\Debug\net8.0-windows\View.AssemblyInfo.cs
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\obj\Debug\net8.0-windows\View.csproj.CoreCompileInputs.cache
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\obj\Debug\net8.0-windows\View.sourcelink.json
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\obj\Debug\net8.0-windows\View.csproj.Up2Date
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\obj\Debug\net8.0-windows\View.dll
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\obj\Debug\net8.0-windows\refint\View.dll
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\obj\Debug\net8.0-windows\View.pdb
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\obj\Debug\net8.0-windows\View.genruntimeconfig.cache
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\obj\Debug\net8.0-windows\ref\View.dll
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\obj\Debug\net8.0-windows\View.Login.resources
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\obj\Debug\net8.0-windows\View.Register.resources
+D:\Kuyliah\Semester 4\Tubes KPL\Clone GitHub\GUI-KPL\View\obj\Debug\net8.0-windows\View.HomepageUser.resources
+D:\GUI-KPL\View\obj\Debug\net8.0-windows\View.csproj.AssemblyReference.cache
+D:\GUI-KPL\View\obj\Debug\net8.0-windows\View.CariBarang.resources
+D:\GUI-KPL\View\obj\Debug\net8.0-windows\View.CreateBarang.resources
+D:\GUI-KPL\View\obj\Debug\net8.0-windows\View.DeleteBarang.resources
+D:\GUI-KPL\View\obj\Debug\net8.0-windows\View.Homepage.resources
+D:\GUI-KPL\View\obj\Debug\net8.0-windows\View.HomepageUser.resources
+D:\GUI-KPL\View\obj\Debug\net8.0-windows\View.Login.resources
+D:\GUI-KPL\View\obj\Debug\net8.0-windows\View.Register.resources
+D:\GUI-KPL\View\obj\Debug\net8.0-windows\View.TabelBarang.resources
+D:\GUI-KPL\View\obj\Debug\net8.0-windows\View.csproj.GenerateResource.cache
+D:\GUI-KPL\View\obj\Debug\net8.0-windows\View.GeneratedMSBuildEditorConfig.editorconfig
+D:\GUI-KPL\View\obj\Debug\net8.0-windows\View.AssemblyInfoInputs.cache
+D:\GUI-KPL\View\obj\Debug\net8.0-windows\View.AssemblyInfo.cs
+D:\GUI-KPL\View\obj\Debug\net8.0-windows\View.csproj.CoreCompileInputs.cache
+D:\GUI-KPL\View\obj\Debug\net8.0-windows\View.sourcelink.json
+D:\GUI-KPL\View\bin\Debug\net8.0-windows\Main.deps.json
+D:\GUI-KPL\View\bin\Debug\net8.0-windows\Main.runtimeconfig.json
+D:\GUI-KPL\View\bin\Debug\net8.0-windows\Main.exe
+D:\GUI-KPL\View\bin\Debug\net8.0-windows\View.exe
+D:\GUI-KPL\View\bin\Debug\net8.0-windows\View.deps.json
+D:\GUI-KPL\View\bin\Debug\net8.0-windows\View.runtimeconfig.json
+D:\GUI-KPL\View\bin\Debug\net8.0-windows\View.dll
+D:\GUI-KPL\View\bin\Debug\net8.0-windows\View.pdb
+D:\GUI-KPL\View\bin\Debug\net8.0-windows\Main.dll
+D:\GUI-KPL\View\bin\Debug\net8.0-windows\Main.pdb
+D:\GUI-KPL\View\obj\Debug\net8.0-windows\View.csproj.Up2Date
+D:\GUI-KPL\View\obj\Debug\net8.0-windows\View.dll
+D:\GUI-KPL\View\obj\Debug\net8.0-windows\refint\View.dll
+D:\GUI-KPL\View\obj\Debug\net8.0-windows\View.pdb
+D:\GUI-KPL\View\obj\Debug\net8.0-windows\View.genruntimeconfig.cache
+D:\GUI-KPL\View\obj\Debug\net8.0-windows\ref\View.dll
+D:\GUI-KPL\View\bin\Debug\net8.0-windows\Data\dataBarang.json
