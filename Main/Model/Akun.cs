@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,9 +16,9 @@ namespace Main.Model
 
         public string Role { get; set; }
 
-        public Akun( string Username, string Password, string Nama, string Role)
+        public Akun(string Username, string Password, string Nama, string Role)
         {
-        
+
             this.Username = Username;
             this.Password = Password;
             this.Nama = Nama;

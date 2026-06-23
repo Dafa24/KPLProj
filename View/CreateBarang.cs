@@ -1,14 +1,9 @@
 ﻿using Main.Model;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using View.Helper;
 
 namespace View
 {
@@ -24,58 +19,34 @@ namespace View
             this.Dispose();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        // Ubah jadi async void
+        private async void button1_Click(object sender, EventArgs e)
         {
             string namabarang = inputNamaBarang.Text;
             int kodebarang = int.Parse(inputKodeBarang.Text);
             int jumlahbarang = int.Parse(inputJumlahBarang.Text);
             int hargabarang = int.Parse(inputHargaBarang.Text);
 
-            List<Barang> dataBarang = ReadJSON();
-            Boolean statusKodeBarang = validateBarang(kodebarang);
+            Boolean statusKodeBarang = await validateBarang(kodebarang);
+
             if (statusKodeBarang)
             {
-                MessageBox.Show("kode barang sudah ada");
-            } else
+                MessageBox.Show("Kode barang sudah ada di Database");
+            }
+            else
             {
                 Barang newBarang = new Barang(namabarang, kodebarang, jumlahbarang, hargabarang);
-                dataBarang.Add(newBarang);
-                WriteJSON(dataBarang);
-                MessageBox.Show("Barang baru berhasil di tambahkan");
+
+                // POST ke API
+                await DataHelper.PostToAPI<Barang>(newBarang, "barang");
+                MessageBox.Show("Barang baru berhasil ditambahkan via API");
+                this.Dispose(); // Tutup form setelah berhasil
             }
         }
 
-        public List<Barang> ReadJSON()
+        private async Task<Boolean> validateBarang(int kodeBarang)
         {
-            string filePathDataBarang = "D:\\GUI-KPL\\Main\\Data\\dataBarang.json";
-            List<Barang> DataBarang = new List<Barang>();
-            try
-            {
-                string configJsonData = File.ReadAllText(filePathDataBarang);
-                DataBarang = JsonSerializer.Deserialize<List<Barang>>(configJsonData);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Error: " + e.Message);
-            }
-            return DataBarang;
-
-        }
-        private void WriteJSON(List<Barang> newDataBarang)
-        {
-            string filePathDataBarang = "D:\\GUI-KPL\\Main\\Data\\dataBarang.json";
-            JsonSerializerOptions options = new JsonSerializerOptions()
-            {
-                WriteIndented = true
-            };
-
-            string jsonString = JsonSerializer.Serialize(newDataBarang, options);
-            File.WriteAllText(filePathDataBarang, jsonString);
-        }
-
-        private Boolean validateBarang(int kodeBarang)
-        {
-            List<Barang> dataBarang = ReadJSON();
+            List<Barang> dataBarang = await DataHelper.GetFromAPI<Barang>("barang");
             for (int i = 0; i < dataBarang.Count; i++)
             {
                 if (dataBarang[i].KodeBarang.Equals(kodeBarang))
@@ -84,8 +55,6 @@ namespace View
                 }
             }
             return false;
-
         }
-
     }
 }

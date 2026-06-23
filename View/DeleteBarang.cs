@@ -1,14 +1,8 @@
 ﻿using Main.Model;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using View.Helper;
 
 namespace View
 {
@@ -24,68 +18,37 @@ namespace View
             this.Dispose();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        // Ubah jadi async void
+        private async void button2_Click(object sender, EventArgs e)
         {
-           List<Barang> list = ReadJSON();
-           string namabarang = inputNamaBarang.Text;
+            string namabarang = inputNamaBarang.Text;
+
             if (string.IsNullOrEmpty(namabarang))
             {
                 MessageBox.Show("Masukkan Nama Barang");
+                return;
             }
-            else
+
+            List<Barang> list = await DataHelper.GetFromAPI<Barang>("barang");
+            bool isFound = false;
+
+            foreach (var barang in list)
             {
-                for (int i = 0; i < list.Count; i++)
+                if (barang.NamaBarang.Equals(namabarang, StringComparison.OrdinalIgnoreCase))
                 {
-                    if (namabarang.Equals(list[i].NamaBarang))
-                    {
-                        list.Remove(list[i]);
-                        WriteJSON(list);
-                        MessageBox.Show("Barang terhapus!");
-                        inputNamaBarang.Clear();
-                    }
+                    isFound = true;
+                    // Tembak endpoint DELETE (asumsi routing API-nya nerima nama barang)
+                    await DataHelper.DeleteFromAPI($"barang/{namabarang}");
+                    MessageBox.Show("Barang berhasil dihapus dari Database!");
+                    inputNamaBarang.Clear();
+                    break;
                 }
             }
-        }
 
-        public List<Barang> ReadJSON()
-        {
-            string filePathDataBarang = "D:\\Tubes KPL GUI\\GUI-KPL\\Main\\Data\\dataBarang.json";
-            List<Barang> DataBarang = new List<Barang>();
-            try
+            if (!isFound)
             {
-                string configJsonData = File.ReadAllText(filePathDataBarang);
-                DataBarang = JsonSerializer.Deserialize<List<Barang>>(configJsonData);
+                MessageBox.Show("Barang tidak ditemukan.");
             }
-            catch (Exception e)
-            {
-                Console.WriteLine("Error: " + e.Message);
-            }
-            return DataBarang;
-
-        }
-        private void WriteJSON(List<Barang> newDataBarang)
-        {
-            string filePathDataBarang = "D:\\Tubes KPL GUI\\GUI-KPL\\Main\\Data\\dataBarang.json";
-            JsonSerializerOptions options = new JsonSerializerOptions()
-            {
-                WriteIndented = true
-            };
-
-            string jsonString = JsonSerializer.Serialize(newDataBarang, options);
-            File.WriteAllText(filePathDataBarang, jsonString);
-        }
-        private Barang validateBarang(string namaBarang)
-        {
-            List<Barang> dataBarang = ReadJSON();
-            for (int i = 0; i < dataBarang.Count; i++)
-            {
-                if (dataBarang[i].NamaBarang.Equals(namaBarang))
-                {
-                    return dataBarang[i];
-                }
-            }
-            return null;
-
         }
     }
 }

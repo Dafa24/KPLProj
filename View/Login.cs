@@ -1,21 +1,13 @@
 ﻿using Main.Model;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Text.Json;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using View.Helper;
 
 namespace View
 {
     public partial class Login : Form
     {
-        // ======================================================================
-        // IMPLEMENTASI TABLE-DRIVEN: Tabel Pemetaan Rute berdasarkan Role
-        // ======================================================================
         private readonly Dictionary<string, Func<Form>> _roleRoutingTable = new Dictionary<string, Func<Form>>
         {
             { "Admin", () => new Homepage() },
@@ -25,35 +17,36 @@ namespace View
         public Login()
         {
             InitializeComponent();
+
+            // Mengubah karakter password menjadi titik-titik (•)
+            textBox2.UseSystemPasswordChar = true;
         }
 
         private void Login_Load(object sender, EventArgs e) { }
         private void label2_Click(object sender, EventArgs e) { }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
             string _username = textBox1.Text;
             string _password = textBox2.Text;
 
-            // Menggunakan string.IsNullOrEmpty karena TextBox kosong di WinForms nilainya "" bukan null
             if (string.IsNullOrEmpty(_username) || string.IsNullOrEmpty(_password))
             {
                 MessageBox.Show("Username atau Password tidak boleh kosong!");
                 return;
             }
 
-            List<Akun> _dataAkun = ReadJSON();
+            // GET Akun dari API
+            List<Akun> _dataAkun = await DataHelper.GetFromAPI<Akun>("akun");
             Akun _akunTerdaftar = ValidateUser(_dataAkun, _username, _password);
 
             if (_akunTerdaftar != null)
             {
-                // EXECUTE TABLE-DRIVEN ROUTING:
-                // Cari role di dalam tabel Dictionary, jika ketemu langsung jalankan fungsinya
                 if (_roleRoutingTable.TryGetValue(_akunTerdaftar.Role, out Func<Form> createForm))
                 {
-                    Form nextForm = createForm(); 
+                    Form nextForm = createForm();
                     nextForm.Show();
-                    this.Hide(); // Sembunyikan form login setelah berhasil masuk
+                    this.Hide();
                 }
                 else
                 {
@@ -73,27 +66,10 @@ namespace View
             this.Hide();
         }
 
-        public List<Akun> ReadJSON()
-        {
-            string filePathDataAkun = "D:\\GUI-KPL\\Main\\Data\\dataAkun.json";
-            List<Akun> dataAkun = new List<Akun>();
-            try
-            {
-                if (File.Exists(filePathDataAkun))
-                {
-                    string configJsonData = File.ReadAllText(filePathDataAkun);
-                    dataAkun = JsonSerializer.Deserialize<List<Akun>>(configJsonData);
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Error: " + e.Message);
-            }
-            return dataAkun;
-        }
-
         private Akun ValidateUser(List<Akun> newDataAkun, string username, string password)
         {
+            if (newDataAkun == null) return null;
+
             for (int i = 0; i < newDataAkun.Count; i++)
             {
                 if (newDataAkun[i].Password.Equals(password) && newDataAkun[i].Username.Equals(username))

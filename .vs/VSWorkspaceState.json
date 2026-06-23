@@ -3,9 +3,11 @@
     "",
     "\\Main",
     "\\Main\\bin",
-    "\\Main\\Data",
+    "\\Main\\bin\\Release",
     "\\Main\\Model",
-    "\\View"
+    "\\Main\\obj",
+    "\\View",
+    "\\View\\Helper"
   ],
   "SelectedNode": "\\View\\Register.cs",
   "PreviewInSolutionExplorer": false
