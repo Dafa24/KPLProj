@@ -55,7 +55,11 @@ namespace View
 
             if (currentStatus == ValidationStatus.Success)
             {
-                Akun newAkun = new Akun(_username, _password, _nama, _role);
+                // MENGACAK PASSWORD: Hash password sebelum disimpan ke database API
+                string hashedPassword = SecurityHelper.HashPassword(_password);
+
+                // Gunakan hashedPassword untuk membuat akun baru
+                Akun newAkun = new Akun(_username, hashedPassword, _nama, _role);
 
                 // POST Akun baru ke API
                 await DataHelper.PostToAPI<Akun>(newAkun, "akun");

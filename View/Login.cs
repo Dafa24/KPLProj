@@ -70,9 +70,13 @@ namespace View
         {
             if (newDataAkun == null) return null;
 
+            // Hash password yang diketik user sebelum dicocokkan dengan JSON
+            string hashedInputPassword = SecurityHelper.HashPassword(password);
+
             for (int i = 0; i < newDataAkun.Count; i++)
             {
-                if (newDataAkun[i].Password.Equals(password) && newDataAkun[i].Username.Equals(username))
+                // Cocokkan username dan password yang SUDAH DI-HASH
+                if (newDataAkun[i].Password.Equals(hashedInputPassword) && newDataAkun[i].Username.Equals(username))
                 {
                     return newDataAkun[i];
                 }
